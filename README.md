@@ -83,7 +83,7 @@ Current design uses a 12V cartridge heater which is now very common and inexpens
 It also uses a 100k thermistor commonly used in 3D printers as well (Semitec 104NT-4-R025H42G). You can change these as long as you have appropriately rated components.
 
 Here are the materials you will need. The specific components I used are indicated in parenthesis.
-- Arduino microcontroller
+- Arduino microcontroller (Nano Every)
 - 16x2 LCD screen (DFRobot I2C 16x2 Arduino LCD with RGB)
 - Thermistor (Semitec 104NT-4-R025H42G potted into a cartridge, very common as 3D printer hot end supplies)
 - Resistor in series with thermistor (10kOhm for my case)
@@ -96,8 +96,7 @@ Here are the materials you will need. The specific components I used are indicat
 - Appropriate gauge wire for heater circuit (e.g. 18 AWG for 12V 40W -> 3.3A for safety)
   - If you are using a breadboard or proto/perf/stripboard with thin traces then put a wire in parallel with the traces to handle the current
 
-Keep grounds common between the heater and thermistor circuits but keep them apart otherwise the pwm output will induce oscillations in your thermistor ADC readings.
-
+Keep grounds common between the heater and thermistor circuits but keep them apart otherwise the pwm output will induce oscillations in your thermistor ADC readings. The decoupling cap will also help with fluctuations and spikes in the ADC readings.
 
 ## Wiring Scheme
 ![scheme](heater_wiring.png)
