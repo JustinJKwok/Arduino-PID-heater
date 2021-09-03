@@ -24,15 +24,15 @@ The following arduino libraries are used:
 Make relevant modifications and upload the sketch to your arduino.
 
 Here's what you may need to modify based on your specific application:
-- pin assignments
-- R_SERIES value (see Thermistor setup below)
-- NUM_COEFF and thermistorCoeffs values (see Thermistor setup below)
+- Pin assignments
+- R_SERIES value (see Thermistor Calibration below)
+- NUM_COEFF and thermistorCoeffs values (see Thermistor Calibration below)
 - minTemp and maxTemp values 
 - samplingInterval and numSamplesToAvg, The first is how often the temperature is measured and the second is how many are averaged to produce a more reliable reading
 - computePIDInterval, how often to update the PID loop, should be >= samplingInterval * numSamplesToAvg
-- updateLCDInterval, how often you want the LCD screen to display the temperature
+- updateLCDInterval, how often you want the LCD screen to update the temperature
 - Kp, Ki, Kd gain values, when the program starts it loads these values from EEPROM at address 0, 4, and 8, respectively
-  - A separate set of values is also coded in as defaults for reference and backup
+  - A separate set of values is also coded in as defaults for reference and can be loaded with a command
   - The first time you run the program you may need to write some initial gain values to the EEPROM
 - if instead of using a single logic level MOSFET you use a NPN transistor to control a standard MOSFET then you will need to invert the PID
   - I don't recommend this since a connection issue or loss of logic supply would lead to uncontrolled heating
