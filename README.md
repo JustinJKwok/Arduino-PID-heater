@@ -36,6 +36,7 @@ Here's what you may need to modify based on your specific application:
   - The first time you run the program you may need to write some initial gain values to the EEPROM
 - if instead of using a single logic level MOSFET you use a NPN transistor to control a standard MOSFET then you will need to invert the PID
   - I don't recommend this since a connection issue or loss of logic supply would lead to uncontrolled heating
+- Serial baudrate
 
 
 #### Thermistor Calibration
@@ -60,17 +61,20 @@ To send commands you will need to connect the arduino to a usb port and use a pr
 Each command must have a header and foot character to indicate the beginning and end of your message. By default these are ">" and "\n", respectively, but can be changed.
 For a list of commands see below. The arduino can also report relevant info like temperature, setpoint, MOSFET PWM, etc. which can be immediately plotted by arduino's serial monitor for live data display (This is useful for tuning your gains manually, will add more on this later).
 
-Instead of sending manual commands like above, you can automate the device or use as part of a larger program. This can be done for example with PySerial.
+Instead of sending manual commands like above, you can automate the device or use it as part of a larger program. This can be done for example with PySerial.
 A Python module for controlling this specific arduino heater and using it in combination with other devices for lab automation is available here:
 [add link]
 
 If you want to develop your own software package then the communication protocol is as follows:
+
 Host sends a command to the arduino:
-If the command is valid, the arduino responds "ACK" + and optional message
-If the command is invalid, the arduino responds "NAK  + and optional message
-Then the arduino proceeds to execute the command.
-If the action was performed successfully, the arduino responds with "SUCC"  + and optional message
-If the action encountered a problem, the arduino responds with "FAIL"  + and optional message.
+
+- If the command is valid, the arduino responds "ACK" + and optional message
+- If the command is invalid, the arduino responds "NAK  + and optional message
+
+If the command is valid, then the arduino proceeds to execute the command.
+- If the action was performed successfully, the arduino responds with "SUCC"  + and optional message
+- If the action encountered a problem, the arduino responds with "FAIL"  + and optional message.
 
 The arduino response characters can be changed in the sketch to any char(s) or byte(s) you want, such as "\x06" for ACK.
 
