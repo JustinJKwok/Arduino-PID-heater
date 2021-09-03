@@ -4,12 +4,13 @@ PID temperature control of a resistive heater using arduino.
 ### Table of Contents
 1. [Getting Started](#getting-started)
     - [Requirements](#requirements)
-    - [Setup & Installation](#setup-&-installation)
+    - [Setup and Installation](#setup-and-installation)
         - [Thermistor Calibration](#thermistor-calibration)
 2. [Usage](#usage)
     - [Commands](#commands)
 3. [Materials](#materials)
 4. [Wiring Scheme](#wiring-scheme)
+5. [License](#license)
 
 ## Getting Started
 ### Requirements
@@ -19,7 +20,7 @@ The following arduino libraries are used:
 - DFRobot_RGBLCD library if you are using DFRobot's 16x2 I2C RGB LCD
   - It is similar to the LiquidCrystal_I2C library so if you use a different LCD you may only need to make minor changes
   
-### Setup & Installation
+### Setup and Installation
 Make relevant modifications and upload the sketch to your arduino.
 
 Here's what you may need to modify based on your specific application:
