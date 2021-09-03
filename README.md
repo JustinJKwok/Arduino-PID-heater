@@ -84,7 +84,7 @@ It also uses a 100k thermistor commonly used in 3D printers as well (Semitec 104
 
 Here are the materials you will need. The specific components I used are indicated in parenthesis.
 - Arduino microcontroller
-- 16x2 LCD screen (if you don't care about displaying to an lcd screen you can remove the update LCD function/timer and its setup code)
+- 16x2 LCD screen (DFRobot I2C 16x2 Arduino LCD with RGB)
 - Thermistor (Semitec 104NT-4-R025H42G potted into a cartridge, very common as 3D printer hot end supplies)
 - Resistor in series with thermistor (10kOhm for my case)
 - Decoupling capacitor (clean up ADC reading from thermistor circuit, I used 100 uF but it can be smaller)
