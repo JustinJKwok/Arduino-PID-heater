@@ -104,3 +104,6 @@ Keep grounds common between the heater and thermistor circuits but keep them apa
 
 ## Wiring Scheme
 ![scheme](heater_wiring.png)
+
+## License
+To add
