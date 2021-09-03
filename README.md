@@ -3,11 +3,11 @@ PID temperature control of a resistive heater using arduino.
 
 ### Table of Contents
 1. [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Setup & Installation](#setup-&-installation)
-    - [Thermistor Calibration](#thermistor-calibration)
+    - [Requirements](#requirements)
+    - [Setup & Installation](#setup-&-installation)
+        - [Thermistor Calibration](#thermistor-calibration)
 2. [Usage](#usage)
-  - [Commands](#commands)
+    - [Commands](#commands)
 3. [Materials](#materials)
 4. [Wiring Scheme](#wiring-scheme)
 
