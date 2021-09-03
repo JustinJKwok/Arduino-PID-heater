@@ -1,10 +1,15 @@
 # Arduino-PID-heater
-PID temperature control of a resistive heater using arduino
-
-Current design uses a 12V cartridge heater which is now very common and inexpensive due to the rise of FDM 3D printers.
-It also uses a 100k thermistor commonly used in 3D printers as well (Semitec 104NT-4-R025H42G).
+PID temperature control of a resistive heater using arduino.
 
 ### Table of Contents
+1. [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Setup & Installation](#setup-&-installation)
+    - [Thermistor Calibration](#thermistor-calibration)
+2. [Usage](#usage)
+  - [Commands](#commands)
+3. [Materials](#materials)
+4. [Wiring Scheme](#wiring-scheme)
 
 ## Getting Started
 ### Requirements
@@ -32,7 +37,7 @@ Here's what you may need to modify based on your specific application:
   - I don't recommend this since a connection issue or loss of logic supply would lead to uncontrolled heating
 
 
-### Thermistor setup
+#### Thermistor Calibration
 There are two scenarios:
 1. You have the thermistor table that relates temperature to its resistance
 2. You don't know the thermistor's temperature and resistance characteristics
@@ -73,6 +78,9 @@ The arduino response characters can be changed in the sketch to any char(s) or b
 To add all commands and descriptions here
 
 ## Materials
+Current design uses a 12V cartridge heater which is now very common and inexpensive due to the rise of FDM 3D printers.
+It also uses a 100k thermistor commonly used in 3D printers as well (Semitec 104NT-4-R025H42G). You can change these as long as you have appropriately rated components.
+
 Here are the materials you will need. The specific components I used are indicated in parenthesis.
 - Arduino microcontroller
 - 16x2 LCD screen (if you don't care about displaying to an lcd screen you can remove the update LCD function/timer and its setup code)
