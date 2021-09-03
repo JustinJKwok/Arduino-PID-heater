@@ -63,7 +63,8 @@ For a list of commands see below. The arduino can also report relevant info like
 
 Instead of sending manual commands like above, you can automate the device or use it as part of a larger program. This can be done for example with PySerial.
 A Python module for controlling this specific arduino heater and using it in combination with other devices for lab automation is available here:
-[add link]
+
+[Lab Automation](https://github.com/JustinJKwok/LabAutomation)
 
 If you want to develop your own software package then the communication protocol is as follows:
 
