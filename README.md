@@ -106,5 +106,11 @@ Keep grounds common between the heater and thermistor circuits but keep them apa
 ## Wiring Scheme
 ![scheme](heater_wiring.png)
 
+## Examples
+Heating stage for glass substrates
+![scheme](pid_heating1.png)
+Temperature readout from Arduino Serial Plotter during PID heating
+![scheme](pid_heating2.png)
+
 ## License
 To add
