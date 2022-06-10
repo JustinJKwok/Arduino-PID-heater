@@ -112,7 +112,11 @@ Heating stage for glass substrates
 
 ![scheme](pid_heating1.png)
 
-Temperature readout from Arduino Serial Plotter during PID heating
+Temperature readout from Arduino Serial Plotter during PID heating. Color indicates state of heating system.
+Blue - PID is off and heater is < unsafeTemp (default 40 C)
+Red - PID is off and heater is > unsafeTemp
+Orange - PID is on and is currently moving towards setpoint
+Green - PID is on and temperature is stabilized at setpoint
 
 ![scheme](pid_heating2.png)
 
