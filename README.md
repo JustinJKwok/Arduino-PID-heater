@@ -10,7 +10,8 @@ PID temperature control of a resistive heater using arduino.
     - [Commands](#commands)
 3. [Materials](#materials)
 4. [Wiring Scheme](#wiring-scheme)
-5. [License](#license)
+5. [Examples](#examples)
+6. [License](#license)
 
 ## Getting Started
 ### Requirements
