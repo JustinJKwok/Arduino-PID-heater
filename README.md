@@ -56,6 +56,11 @@ The Steinhart-Hart equation is the same as the 4th order polynomial except with 
 For the series resistor in the final device you should choose a resistance that is the same as the thermistor's resistance at the temperature you will be most likely be working at.
 For example, the Semitec 104NT-4-R025H42G is a 100k thermistor and so it is 100 kOhm at 25 C. But since I plan to have the heater around 80 C most of the time, the resistance will be 10.8 kOhm, so I would use a 10 kOhm series resistor
 
+#### PID Gain Tuning
+Commands are available that enable changing of Kp, Ki, Kd gain parameters. It is possible to load default values as well as to write and read gain configurations to EEPROM.
+
+To add more documentation.
+
 ## Usage
 The arduino parses its serial buffer for commands. If the command is valid it then executes it. 
 To send commands you will need to connect the arduino to a usb port and use a program like Arduino Serial Monitor or PuTTY to send commands.
